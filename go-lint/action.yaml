@@ -1,0 +1,22 @@
+name: Go Lint
+author: Milad Irannejad
+description: GitHub action for static code analysis of Go codes for errors, warnings, and linting issues.
+inputs:
+  path:
+    description: The root path of the directory containing Go files.
+    required: false
+    default: .
+  timeout:
+    description: The total timeout.
+    required: false
+    default: 2m
+  new_changes:
+    description: Whether or not to run linters only for new changes.
+    required: false
+    default: 'true'
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: check
+  color: purple
