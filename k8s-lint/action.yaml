@@ -1,0 +1,22 @@
+name: Kubernetes Lint
+author: Milad Irannejad
+description: GitHub action for linting Kubernetes YAML resource files.
+inputs:
+  path:
+    description: The root path of the directory containing YAML files.
+    required: false
+    default: .
+  enable_kubeval:
+    description: Whether or not to run kubeval on YAML files.
+    required: false
+    default: 'true'
+  enable_kubescore:
+    description: Whether or not to run kube-score on YAML files.
+    required: false
+    default: 'true'
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: check
+  color: purple
