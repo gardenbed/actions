@@ -1,0 +1,17 @@
+name: Kubernetes Lint
+on:
+  push:
+    paths:
+      - 'k8s-lint/**'
+jobs:
+  k8s-lint:
+    name: Test k8s-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Kubernetes Lint
+        uses: ./k8s-lint
+        with:
+          path: ./k8s-lint/test
+          enable_kubeval: 'true'
+          enable_kubescore: 'false'
