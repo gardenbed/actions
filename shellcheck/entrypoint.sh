@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-set -eu  # -o pipefail
+set -eu
 
 shellcheck_on_file() {
   file=$1
