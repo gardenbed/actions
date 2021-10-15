@@ -1,0 +1,18 @@
+name: Basil Release
+author: Milad Irannejad
+description: GitHub action for publishing GitHub releases created by Basil CLI.
+inputs:
+  artifacts:
+    description: A space-separated list of artifacts for uploading to the release.
+    required: false
+outputs:
+  release_tag:
+    description: The Git tag for the published release.
+  release_url:
+    description: The GitHub page URL for the published release.
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: tag
+  color: gray-dark

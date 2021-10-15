@@ -1,0 +1,18 @@
+name: Basil Release
+on:
+  push:
+    paths:
+      - 'basil-release/**'
+jobs:
+  basil-release:
+    name: Test basil-release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Basil Release
+        id: release
+        uses: ./basil-release
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
