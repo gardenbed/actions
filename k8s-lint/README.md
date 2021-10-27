@@ -41,11 +41,11 @@ name: Example
 on: [push]
 jobs:
   lint:
-    name: Lint Resources
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Linting
+      - name: Linting Resources
         uses: gardenbed/actions/k8s-lint@main
 ```
 
@@ -54,11 +54,11 @@ name: Example
 on: [push]
 jobs:
   lint:
-    name: Lint Resources
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Linting
+      - name: Linting Resources
         uses: gardenbed/actions/k8s-lint@main
         with:
           path: ./kubernetes
@@ -69,11 +69,11 @@ name: Example
 on: [push]
 jobs:
   lint:
-    name: Lint Resources
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Linting
+      - name: Linting Resources
         uses: gardenbed/actions/k8s-lint@main
         with:
           enable_kubeval: 'false'
@@ -84,11 +84,11 @@ name: Example
 on: [push]
 jobs:
   lint:
-    name: Lint Resources
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Linting
+      - name: Linting Resources
         uses: gardenbed/actions/k8s-lint@main
         with:
           enable_kubescore: 'false'

@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-set -eu  # -o pipefail
+set -eu
 
 kubeval_on_file() {
   printf "\n====================[ KUBEVAL ]====================\n\n"

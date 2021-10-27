@@ -1,0 +1,14 @@
+name: Ruby Lint
+author: Milad Irannejad
+description: GitHub action for linting Ruby codes. It uses RuboCop linter/formatter.
+inputs:
+  path:
+    description: The root path of the directory containing Ruby files.
+    required: false
+    default: .
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: check
+  color: purple
