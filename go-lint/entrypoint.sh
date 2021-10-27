@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -eu  # -o pipefail
+set -eu
 
 # Changing working directory to input path
 cd "$INPUT_PATH"

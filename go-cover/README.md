@@ -11,7 +11,7 @@ The following services are currently supported:
 ### `path`
 
 The path of the directory containing `*.go` and `*_test.go` files.
-The default path is `./...`.
+The default path is `.`.
 
 ### `codecov_token`
 
