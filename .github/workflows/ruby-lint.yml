@@ -1,0 +1,15 @@
+name: Ruby Lint
+on:
+  push:
+    paths:
+      - 'ruby-lint/**'
+jobs:
+  ruby-lint:
+    name: Test ruby-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Ruby Lint
+        uses: ./ruby-lint
+        with:
+          path: ./ruby-lint/test
