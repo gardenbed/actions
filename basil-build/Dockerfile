@@ -1,6 +1,6 @@
 FROM golang:1.17
 
-LABEL repository="https://github.com/gardenbed/basil-cli"
+LABEL repository="https://github.com/gardenbed/actions"
 LABEL maintainer="Milad Irannejad <moorara@users.noreply.github.com>"
 
 # Install required tools
