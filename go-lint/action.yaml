@@ -19,4 +19,4 @@ runs:
   image: Dockerfile
 branding:
   icon: check
-  color: purple
+  color: orange

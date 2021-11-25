@@ -13,4 +13,4 @@ runs:
     - ${{ inputs.path }}
 branding:
   icon: check
-  color: purple
+  color: orange
