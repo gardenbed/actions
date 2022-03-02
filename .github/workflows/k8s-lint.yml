@@ -8,7 +8,7 @@ jobs:
     name: Test k8s-lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Kubernetes Lint
         uses: ./k8s-lint
         with:
