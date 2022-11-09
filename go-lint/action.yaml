@@ -10,10 +10,10 @@ inputs:
     description: The total timeout.
     required: false
     default: 2m
-  new_changes:
-    description: Whether or not to run linters only for new changes.
+  from_revision:
+    description: If specified, only the changes since this git revision will be considered.
     required: false
-    default: 'true'
+    default: origin/main
 runs:
   using: docker
   image: Dockerfile
