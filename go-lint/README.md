@@ -17,10 +17,10 @@ The default path is `.`.
 
 The timeout for total work. The default value is `2m` (two minutes).
 
-### `new_changes`
+### `from_revision`
 
-If set to `true`, only new lines of codes (added or changed) will be checked.
-The default value for this input is `true`.
+If set to a valid git revision, only new lines of codes (added or changed) since this revision will be checked.
+The default value for this input is `origin/main`.
 
 For more information about this option,
 please take a look at `golangci` [help](https://github.com/golangci/golangci-lint#command-line-options).

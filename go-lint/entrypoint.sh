@@ -6,7 +6,8 @@ set -eu
 cd "$INPUT_PATH"
 
 # Run linters
-golangci-lint run \
-  --new="$INPUT_NEW_CHANGES" \
-  --deadline="$INPUT_TIMEOUT" \
-  ./...
+if [ -z "$INPUT_FROM_REVISION" ]; then
+  golangci-lint run --deadline="$INPUT_TIMEOUT" ./...
+else
+  golangci-lint run --deadline="$INPUT_TIMEOUT" --new-from-rev="$INPUT_FROM_REVISION" ./...
+fi
