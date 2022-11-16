@@ -1,5 +1,5 @@
 # STAGE 1: Build
-FROM alpine:3.16 AS builder
+FROM alpine:3.17 AS builder
 
 LABEL repository="https://github.com/gardenbed/actions"
 LABEL maintainer="Milad Irannejad <moorara@users.noreply.github.com>"
@@ -24,7 +24,7 @@ RUN apk add --no-cache ca-certificates gnupg unzip && \
     rm "${project}_${version}_SHA256SUMS" "${project}_${version}_SHA256SUMS.sig" "${project}_${version}_${os}_${arch}.zip"
 
 # STAGE 2: Final
-FROM alpine:3.16
+FROM alpine:3.17
 
 RUN apk add --no-cache make curl openssh git
 
