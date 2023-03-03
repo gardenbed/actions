@@ -29,5 +29,5 @@ exit_code=$?
 go tool cover -html=c.out -o coverage.html
 
 # Set action output parameters
-echo "::set-output name=coverage_profile_file::c.out"
-echo "::set-output name=coverage_report_file::coverage.html"
+echo "coverage_profile_file=c.out" >> $GITHUB_OUTPUT
+echo "coverage_report_file=coverage.html" >> $GITHUB_OUTPUT
