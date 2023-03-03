@@ -9,11 +9,10 @@ inputs:
   timeout:
     description: The total timeout.
     required: false
-    default: 2m
+    default: 5m
   from_revision:
     description: If specified, only the changes since this git revision will be considered.
     required: false
-    default: origin/main
 runs:
   using: docker
   image: Dockerfile
