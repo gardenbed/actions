@@ -1,4 +1,4 @@
-FROM golang:1.20
+FROM golang:1.22
 
 LABEL repository="https://github.com/gardenbed/actions"
 LABEL maintainer="Milad Irannejad <moorara@users.noreply.github.com>"
