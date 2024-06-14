@@ -1,4 +1,4 @@
-FROM ruby:3.3.2-alpine
+FROM ruby:3.3.3-alpine
 
 LABEL repository="https://github.com/gardenbed/actions"
 LABEL maintainer="Milad Irannejad <moorara@users.noreply.github.com>"
