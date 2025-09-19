@@ -7,9 +7,5 @@ LABEL maintainer="Milad Irannejad <moorara@users.noreply.github.com>"
 RUN wget -q -O /usr/local/bin/codecov https://uploader.codecov.io/latest/linux/codecov && \
     chmod 755 /usr/local/bin/codecov
 
-# Install Code Climate test-reporter
-RUN wget -q -O /usr/local/bin/test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 && \
-    chmod 755 /usr/local/bin/test-reporter
-
 COPY entrypoint.sh /
 ENTRYPOINT [ "/entrypoint.sh" ]
